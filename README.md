@@ -1,5 +1,5 @@
 # React + Vite
-
+<a href="https://deepwiki.com/pedroGEOGIScoding/Flight_Tracker_PedroGeoGISdev"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
