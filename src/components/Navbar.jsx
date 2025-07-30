@@ -1,7 +1,8 @@
 import { AppBar, Box, Button, Drawer, IconButton, Toolbar, Typography, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Divider } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import { Home, Map } from "@mui/icons-material";
+import { Link } from 'react-router-dom';
 
 const navLinks = [
   { title: 'Home', path: '/',icon: <Home/> },
@@ -60,8 +61,8 @@ export default function Navbar () {
                   <Button
                     color="inherit"
                     key={item.title}
-                    component = "a"
-                    href = {item.path}
+                    component={Link}
+                    to={item.path}
                     >
                     {item.title}
                   </Button>
@@ -91,8 +92,8 @@ export default function Navbar () {
             {navLinks.map((item) => (
               <ListItem key={item.title} disablePadding>
                 <ListItemButton 
-                  component="a" 
-                  href={item.path}
+                  component={Link} 
+                  to={item.path}
                   onClick={() => toggleDrawer(false)}
                 >
                   <ListItemIcon>{item.icon}</ListItemIcon>
